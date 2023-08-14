@@ -2,6 +2,112 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+main {
+    margin: 0px 0px 0px 0px;
+}
+
+.carousel {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display:grid;
+    background-image:url(images/store/ganesha_goods.jpg);
+    background-size: auto 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:#8696FE;
+    margin-bottom:150px;
+    height:400px;
+    border-radius:0px 0px 40px 40px;
+}
+
+.slide-text {
+    margin-left:70px;
+    margin-top:30px;
+    color: white;
+}
+
+.carousel__populer {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin:0px;
+}
+
+.carousel__buku {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin:0px;
+}
+
+.carousel__toko {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin:0px;
+}
+
+.carousel__deskripsi {
+    display:flex;
+    width:50vw;
+    flex-wrap:wrap;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin:5px;
+}
+
+.masukkan-beli {
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+    margin-top:80px;
+}
+
+.masukkan-beli > button:hover {
+    background-color:#FFF388;
+}
+
+.btn-masukkan, .btn-beli {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 15px 15px 15px 19px;
+    background-color: #FFE814;
+    color: #000;
+    border-radius: 25px 25px 25px 25px;
+    cursor: pointer;   
+    margin-left:175px;
+    text-align:center;
+    height:40px;
+    font-weight: 600; 
+}
+
+.btn-masukkan > svg {
+    margin-left:5px;
+}
+
+.carousel-img {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    width: 250px;
+    height: 370px;
+    border-radius:11px;
+}
+
 a:link, a:visited {
     text-decoration: none;
     color: inherit;
@@ -58,13 +164,15 @@ a:link, a:visited {
     margin: 0 0.5rem;
 }
 
-main {
+/* main {
     margin: 0 0.75rem;
-}
+} */
 
 #section-header {
     display: flex;
     justify-content: space-between;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 .show-all {
