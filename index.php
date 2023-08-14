@@ -1,5 +1,5 @@
 <?php
-include './user/config.php';
+include 'config.php';
 session_start();
 $isLoggedIn = isset($_SESSION['username']);
 ?>
@@ -84,28 +84,45 @@ $isLoggedIn = isset($_SESSION['username']);
                 </div>
             </div>
         </section>
+
+        <article class="thread">
+
+        </article>
+
+<!--
+        
         <section id="store-section">
             <div id="section-header">
                 <h3>Daftar Toko</h3>
                 <button class="show-all">Lihat Semua</button>
             </div>
             <div id="store-list" class="item-list">
-                <?php
-                
+            <?php
+                /*
                 $sql = "SELECT * FROM store";
                 $result = mysqli_query($conn, $sql);
 
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<div class="card store-card">';
-                    echo '<img src="./images/store/' . $row['store_img'] . '">';
+                    echo '<img src=' . $row['store_img'] . '>';
                     echo '<h3>' . $row['store_name'] . '</h3>';
                     echo '<a href="./store?id=' . $row['store_id'] .  '">Kunjungi Toko</a>';
                     echo '</div>';              
                 }
+                */
                 ?>
             </div>
         </section>
+-->
 
+        <section class="toko-container">
+            <?php include("toko_terbaik.php")?>
+        </section>
+
+        <section class="rekomendasi_buku">
+            <?php include("rekomendasi_buku.php")?>
+        </section>
+<!--
         <section id="product-section">
             <div id="section-header">
                 <h3>Daftar Produk</h3>
@@ -113,7 +130,7 @@ $isLoggedIn = isset($_SESSION['username']);
             </div>
             <div id="product-list" class="item-list">
                 <?php
-                
+                /*
                 $sql = "SELECT * FROM product";
                 $result = mysqli_query($conn, $sql);
 
@@ -124,9 +141,11 @@ $isLoggedIn = isset($_SESSION['username']);
                     echo '<a href="./product?id=' . $row['product_id'] .  '">Lihat Produk</a>';
                     echo '</div>';              
                 }
+                */
                 ?>
             </div>
         </section>
+-->
     </main>
 
     <footer>
